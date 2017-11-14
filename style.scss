@@ -1,0 +1,81 @@
+$color1:#403B48;
+$color2:#F3EFF9;
+$color3:#EA6188;
+
+body{
+    background-color: $color1;
+    
+}
+header{
+    background-image:
+    url("./image/iPhonexIMGL6589_TP_V.jpg");
+    height: 500px;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+}
+
+.text-center{
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+.big-text{
+    margin: 30px;
+    color: $color2;
+}
+.maincontent{
+    display: flex;
+    flex-direction: row;
+    padding: 0px 30px;
+}
+.content-box{
+    width: 33.333%;  //画面サイズの3分の1
+    height: 200px;  
+    margin: 10px 10px;  //上下,左右の余白
+    background-color: $color2; //色
+    h3{
+        text-align:center;
+        height: 10%;
+        padding-top: 10px;
+        margin-bottom: 3px;
+        background-color: $color3;
+    }
+    p{
+        padding: 10px;
+    }
+}
+footer{
+    margin: 50px;
+}
+.foot-btn{
+    display: flex;
+    flex-direction: column; 
+    align-items: center; //縦に中央寄せ
+    .foot-text{
+        width:200px;
+        padding:8px 10px;
+        color: $color3;
+        background-color:$color1;
+    }
+    .btn-last{
+    width:200px;
+    padding:8px 10px;
+    color: #FFF;
+    background-color:$color3;
+    border-radius: 5px;
+    }
+}
+
+@media(max-width: 768px){ //画面サイズ
+    header{
+        height: 250px;
+    }
+    .maincontent{
+        flex-direction: column; //flexを適応したい親要素につける
+        align-items: center; //maincontentにある要素をすべて中央寄せ
+        .content-box{
+            width: 75%;
+        }
+    }
+}
