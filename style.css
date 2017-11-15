@@ -37,7 +37,8 @@ header {
     padding: 10px; }
 
 footer {
-  margin: 50px; }
+  padding: 10px;
+  background-color: #F3EFF9; }
 
 .foot-btn {
   display: flex;
@@ -46,8 +47,8 @@ footer {
   .foot-btn .foot-text {
     width: 200px;
     padding: 8px 10px;
-    color: #EA6188;
-    background-color: #403B48; }
+    color: #403B48;
+    background-color: #F3EFF9; }
   .foot-btn .btn-last {
     width: 200px;
     padding: 8px 10px;
